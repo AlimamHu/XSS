@@ -7,4 +7,5 @@
 <a href="javascript:alert(1) ">xss</a>
 <img src=x onerror='prompt(8)'>
 <script ~~~>alert(0%0)</script ~~~>
+ # improve the xss for bypass filter
  
